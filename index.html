@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(255, 223, 228);">
+    <fieldset style="background-color: #f5fcd1;">
+    <form>
+
+        <p>
+        <label>Name :
+        <input type="text" name="customer_name" required placeholder="Name" minlength="8" maxlength="20">
+        </label> 
+        </p>
+        
+        <p>
+        <label>Father Name :
+        <input type="text" name="father_name" placeholder="Father Name" minlength="8" maxlength="20">
+        </label>
+        </p>
+
+        <p>
+        <label>Phone :
+        <input type="number" name="phone_number" placeholder="Cell Number">
+        </label>
+        </p>
+    
+        <p>
+        <label>Email :
+        <input type="email" name="email_address" placeholder="Enter your gmail">
+        </label>
+        </p>
+        
+        <p>
+        <label>Password :
+        <input type="password" name="Password" placeholder="Password" minlength="8" maxlength="15">
+        </label>
+        </p>
+            
+        <fieldset style="background-color:  rgb(255, 223, 228);">
+        <legend>City :</legend>
+        <p><label> <input type="radio" name="city" required value="Karachi" checked>Karachi </label></p>
+        <p><label> <input type="radio" name="city" required value="Lahore"> Lahore </label></p>
+        <p><label> <input type="radio" name="city" required value="Pasni"> Pasni </label></p>
+        <p><label> <input type="radio" name="city" required value="Islamabad"> Islamabad </label></p>
+        </fieldset>
+        <br>
+        <fieldset style="background-color:  rgb(255, 223, 228);">
+        <legend>Hobbies :</legend>
+        <p><label> <input type="checkbox" name="Hobbies" value="Games" checked> Games</label></p>
+        <p><label> <input type="checkbox" name="Hobbies" value="Reading Books"> Reading Books </label></p>
+        <p><label> <input type="checkbox" name="Hobbies" value="Music"> Music</label></p>
+        </fieldset>
+        
+        <p>
+        <label>Pickup Date/Time
+        <input type="datetime-local" name="pickup_time" required>
+        </label>
+        </p>
+            
+        <p>
+        <label>Lannguages :
+        <select id="Lannguages" name="Lannguages">
+        <option value="" selected="selected">Select One</option>
+        <option value="Urdu" >Urdu</option>
+        <option value="English" >English</option>
+        <option value="Other" >Other</option>
+        </select>
+        </label> 
+        </p>
+        
+        <p>
+        <label>Working Experience :
+        <input type="text" name="Experience" required list="Experience">
+        </label>
+        <datalist id="Experience">
+        <option value="6 Months">
+        <option value="1 Year">
+        <option value="2 Year">
+        </datalist>
+        </p>
+        
+        <p>
+        <label>Special Instructions :<br>
+        <textarea name="comments" maxlength="500" rows="4" cols="35"></textarea>
+        </label>
+        </p>
+        
+        <p><button>Submit Booking</button></p>
+        
+    </form>
+    </fieldset>
+</body>
+</html>
